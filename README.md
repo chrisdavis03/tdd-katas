@@ -44,6 +44,12 @@ The pytest.ini file stores configuration for the 'test' package.
 The conftest.py file stores pytest 'fixtures'.  
 Both my be empty at first. 
 
-### Getting Started
-In many of the examples and tutorials I see, they are writing the application code first and setting of the test later. 
-This seems counter to the TDD process. 
+### Fixtures
+Fixtures are located in the conftest.py file and are represented by the @pytest.fixure decorator.
+Fixtures are, by default, executed before each test. Fixtures can exist inside the test as well. 
+
+They can be used to clear the database after each test and create a new one before each test.
+  
+
+Following this example.
+https://testdriven.io/blog/modern-tdd/ 
